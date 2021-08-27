@@ -13,3 +13,5 @@ In this post I show how to perform a data collection using the gitlab and nodejs
 
 - [Create Environment NodeJs](#create-environment-nodejs)
 - [Run MongoDB from docker-compose](#run-mongodb-from-docker-compose)
+- [Create Schema with logs structure](#run-mongodb-from-docker-compose)
+- [Create function for collect logs from pipeline](#create-function-for-collect-logs-from-pipeline)
