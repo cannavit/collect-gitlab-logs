@@ -1,5 +1,6 @@
 # Gitlab pipeline logs collection for BigData analysis
-[![Build Status](https://cloud.drone.io/api/badges/kontena/kubelet-rubber-stamp/status.svg)](https://cloud.drone.io/kontena/kubelet-rubber-stamp)
+[![NodeJS](https://img.shields.io/badge/-NodeJs-3CA80B?style=flat-square&logo=nodejs&logoColor=white&link=https://nodejs.org/en/)](https://nodejs.org/en/)
+[![GitHub](https://img.shields.io/badge/-github-black?style=flat-square&labelColor=black&logo=github&logoColor=white&link)](https://github.com/cannavit/zipi-smkTest)
 
 The analysis of large volumes of information can help determine where the most errors are found for a given project or thousands of projects. This information can be used to generate adequate tests and to mitigate the errors produced in the Pipelines.
 
