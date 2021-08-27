@@ -1,0 +1,30 @@
+{
+  "name": "collect-gitlab-logs",
+  "version": "1.0.0",
+  "description": "[![NodeJS](https://img.shields.io/badge/-NodeJs-3CA80B?style=flat-square&logo=nodejs&logoColor=white&link=https://nodejs.org/en/)](https://nodejs.org/en/) [![GitHub](https://img.shields.io/badge/-github-black?style=flat-square&labelColor=black&logo=github&logoColor=white&link)](https://github.com/cannavit/zipi-smkTest)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cannavit/collect-gitlab-logs.git"
+  },
+  "keywords": [
+    "collect",
+    "gitlab",
+    "pipeline",
+    "logs"
+  ],
+  "author": "Cannavit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cannavit/collect-gitlab-logs/issues"
+  },
+  "homepage": "https://github.com/cannavit/collect-gitlab-logs#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2"
+  }
+}

@@ -15,3 +15,62 @@ In this post I show how to perform a data collection using the gitlab and nodejs
 - [Run MongoDB from docker-compose](#run-mongodb-from-docker-compose)
 - [Create Schema with logs structure](#run-mongodb-from-docker-compose)
 - [Create function for collect logs from pipeline](#create-function-for-collect-logs-from-pipeline)
+
+
+## Create Environment Nodejs. 
+
+NodeJS is an excellent tool for collecting pipe logs because it has excellent performance. In this section we will install the nodejs packages.
+
+### 1) Create the npm project:
+
+```
+    npm init
+```
+
+### 2) Install dependencies
+
+```
+    npm install dotenv mongoose express
+
+```
+
+
+### 3) Create the project structure 
+
+ For this example we propose use one simple structure, composed by src/service and access file index.js
+
+```
+    |- src
+        |- services
+    |- index.js
+    |- .env
+```
+
+
+### 4) Create file index.js
+
+
+```
+// Import dependencies
+const express = require("express");
+const mongoose = require("mongoose");
+require("dotenv").config();
+
+// Environment variables
+let MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/logsGitlab";
+
+// Connect with mongoDB
+
+mongoose.connect(MONGO_URI, {
+  useNewUrlParser: "true",
+});
+
+mongoose.connection.on("error", (err) => {
+  console.log("err", err);
+});
+
+mongoose.connection.on("connected", (err, res) => {
+  console.log("🟢 Mongoose is connected");
+});
+
+```
